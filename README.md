@@ -13,6 +13,7 @@ Designed for evaluating and filtering potentially malicious user input before it
 - 🔐 **Environment Variable Based Key Loading** (no secrets stored)
 
 ## 🗂 File Structure
+
 📁 LLM-prompt-firewall
 │
 ├── config.py # Configuration and constants
@@ -39,9 +40,9 @@ Designed for evaluating and filtering potentially malicious user input before it
 
 ## ⚙️ Setup Instructions
 
-1. Clone the repo:
-   git clone https://github.com/ArihantKhaitan/LLM-prompt-firewall.git
-   cd LLM-prompt-firewall
+1.Clone the repo:
+git clone https://github.com/ArihantKhaitan/LLM-prompt-firewall.git
+cd LLM-prompt-firewall
    
 2.Create a virtual environment:
 python -m venv venv
