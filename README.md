@@ -20,7 +20,7 @@ Designed for evaluating and filtering potentially malicious user input before it
 ├── prompts.json # Input prompts to be tested
 ├── dataset.json # Dataset for evaluation
 │
-├── classifier.py # Main OpenAI-based classifier
+├── classifier.py # Main Ollama-based classifier
 ├── zero_shot_classifier_ollama.py # Ollama-based classifier
 │
 ├── evaluate_classifier.py # Evaluates classifier performance
@@ -65,6 +65,9 @@ python evaluate_classifier.py
 
 ➤ Run Full Evaluation:
 python run_full_evaluation.py
+
+➤ Run Firewall UI:
+streamlit run firewall_ui.py
 
 💾 Output & Results
 
