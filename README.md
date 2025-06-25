@@ -6,10 +6,11 @@ Designed for evaluating and filtering potentially malicious user input before it
 ## 🚀 Features
 
 - ✅ **Prompt Classification**: Classifies prompts into `safe` or `jailbreak`
-- 🧠 **Zero-shot Inference**: Uses powerful LLMs to detect prompt intent without fine-tuning
+- 🧠 **Few-shot Inference and Zero-shot Inference**: Uses powerful LLMs to detect prompt intent with or without examples
 - 🧪 **Evaluation Suite**: Test and measure accuracy on labeled datasets
 - 🌐 **UI Interface**: Minimal terminal-based interface for testing
 - 🔐 **Environment Variable Based Key Loading** (no secrets stored)
+- 🔥 **Firewall**: Blocks Prompts at Prompt level or Respone Level 
 
 ## 🗂 File Structure
 
@@ -19,19 +20,19 @@ config.py # Configuration and constants
 
 dataset.json # Manual dataset for evaluation
 
-zero_shot_classifier_ollama.py # Ollama-based classifier
+zero_shot_classifier_ollama.py # Ollama-based classifier based on dataset.json
 
-evaluate_classifier.py # Evaluates classifier performance
+evaluate_classifier.py # Evaluates classifier performance based on labelled dataset
 
 test_firewall.py # Unit tests for firewall system
 
 firewall.py # Core firewall logic
 
-classifier.py # Main Ollama-based classifier
+classifier.py # Main Few-shot Ollama-based classifier
 
-run_combined_test.py # Runs tests across both models
+run_combined_test.py # Runs tests including everthing based on manual data
 
-run_full_evaluation.py # Full-scale evaluation of all prompts
+run_full_evaluation.py # Full-scale evaluation of all prompts based on labelled dataset
 
 firewall_ui.py # CLI-based UI
 
