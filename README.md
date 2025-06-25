@@ -16,14 +16,23 @@ Designed for evaluating and filtering potentially malicious user input before it
 📁 LLM-prompt-firewall
 
 config.py # Configuration and constants
+
 dataset.json # Manual dataset for evaluation
+
 zero_shot_classifier_ollama.py # Ollama-based classifier
+
 evaluate_classifier.py # Evaluates classifier performance
+
 test_firewall.py # Unit tests for firewall system
+
 firewall.py # Core firewall logic
+
 classifier.py # Main Ollama-based classifier
+
 run_combined_test.py # Runs tests across both models
+
 run_full_evaluation.py # Full-scale evaluation of all prompts
+
 firewall_ui.py # CLI-based UI
 
 ## ⚙️ Setup Instructions
@@ -62,8 +71,11 @@ streamlit run firewall_ui.py
 All results are saved in JSON format in the results/ directory:
 
 classified_results.json # 
+
 eval_results_ollama.json #
+
 combined_test_results.json #
+
 full_firewall_eval_results.json # Final Firewall output
 
 📜 License
