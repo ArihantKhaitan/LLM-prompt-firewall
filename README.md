@@ -38,18 +38,25 @@ firewall_ui.py # CLI-based UI
 ## ⚙️ Setup Instructions
 
 1.Clone the repo:
+
 git clone https://github.com/ArihantKhaitan/LLM-prompt-firewall.git
+
 cd LLM-prompt-firewall
    
 2.Create a virtual environment:
+
 python -m venv venv
+
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 
 3.Install dependencies:
+
 pip install -r requirements.txt
 
 4.Set your API keys:
+
 For Hugging Face:
+
 export HUGGINGFACE_API_KEY="your-hf-token"
 
 🧪 How to Run
