@@ -78,11 +78,11 @@ streamlit run firewall_ui.py
 
 All results are saved in JSON format in the results/ directory:
 
-classified_results.json # 
+classified_results.json 
 
-eval_results_ollama.json #
+eval_results_ollama.json 
 
-combined_test_results.json #
+combined_test_results.json 
 
 full_firewall_eval_results.json # Final Firewall output
 
