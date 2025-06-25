@@ -7,7 +7,6 @@ Designed for evaluating and filtering potentially malicious user input before it
 
 - ✅ **Prompt Classification**: Classifies prompts into `safe` or `jailbreak`
 - 🧠 **Zero-shot Inference**: Uses powerful LLMs to detect prompt intent without fine-tuning
-- 🔄 **Dual Model Support**: Works with both **OpenAI** and **Ollama** models
 - 🧪 **Evaluation Suite**: Test and measure accuracy on labeled datasets
 - 🌐 **UI Interface**: Minimal terminal-based interface for testing
 - 🔐 **Environment Variable Based Key Loading** (no secrets stored)
@@ -15,28 +14,17 @@ Designed for evaluating and filtering potentially malicious user input before it
 ## 🗂 File Structure
 
 📁 LLM-prompt-firewall
-│
-├── config.py # Configuration and constants
-├── prompts.json # Input prompts to be tested
-├── dataset.json # Dataset for evaluation
-│
-├── classifier.py # Main Ollama-based classifier
-├── zero_shot_classifier_ollama.py # Ollama-based classifier
-│
-├── evaluate_classifier.py # Evaluates classifier performance
-├── run_combined_test.py # Runs tests across both models
-├── run_full_evaluation.py # Full-scale evaluation of all prompts
-├── test_firewall.py # Unit tests for firewall system
-│
-├── firewall.py # Core firewall logic
-├── firewall_ui.py # CLI-based UI
-│
-├── results/ # 📁 (you can create this folder)
-│ ├── classified_results.json # Results from OpenAI classifier
-│ ├── classified_results_ollama.json # Results from Ollama classifier
-│ └── full_firewall_eval_results.json # Final firewall output
-│
-└── README.md
+
+config.py # Configuration and constants
+dataset.json # Manual dataset for evaluation
+zero_shot_classifier_ollama.py # Ollama-based classifier
+evaluate_classifier.py # Evaluates classifier performance
+test_firewall.py # Unit tests for firewall system
+firewall.py # Core firewall logic
+classifier.py # Main Ollama-based classifier
+run_combined_test.py # Runs tests across both models
+run_full_evaluation.py # Full-scale evaluation of all prompts
+firewall_ui.py # CLI-based UI
 
 ## ⚙️ Setup Instructions
 
@@ -73,9 +61,10 @@ streamlit run firewall_ui.py
 
 All results are saved in JSON format in the results/ directory:
 
-classified_results_ollama.json: Ollama classification
-
-full_firewall_eval_results.json: Final unified evaluation results
+classified_results.json # 
+eval_results_ollama.json #
+combined_test_results.json #
+full_firewall_eval_results.json # Final Firewall output
 
 📜 License
 
