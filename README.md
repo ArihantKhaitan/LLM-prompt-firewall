@@ -74,10 +74,13 @@ classified_results_ollama.json: Ollama classification
 full_firewall_eval_results.json: Final unified evaluation results
 
 📜 License
+
 This project is licensed under the MIT License. You are free to use, modify, and distribute this code with proper attribution.
 
 👤 Author
+
 Arihant Khaitan
 
 🤝 Contributions
+
 Pull requests and feedback are welcome. If you find a bug or have a suggestion, feel free to open an issue.
